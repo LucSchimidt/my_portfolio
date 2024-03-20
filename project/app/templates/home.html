@@ -1,1 +1,64 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+    <section class="home">
+        <div class="home-title">
+            <h2><b>#My name is Lucas Schimidt,</b></h2>
+            <h1>Welcome to my Portfolio.</h1>
+        </div>
+
+        <div class="home-resume">
+            <p>Download my resume:</p>
+            <button><i class="bi bi-file-earmark-medical"></i>Resume.pdf</button>
+        </div>
+
+        <div class="home-work">
+            <p>See my recent work:</p>
+            <ul>
+                <li>
+                    <img src="/media/assets/listras.jpg"></img>
+                    <div>
+                        <p><b>This Website.</b></p>
+                    <div>
+                </li>
+                <li>
+                    <img src="/media/assets/ondas.jpg"></img>
+                    <div>
+                        <p><b>Website for Barbershop.</b></p>
+                    <div>
+                </li>
+                <li>
+                    <img src="/media/assets/quebracabeca.jpg"></img>
+                    <div>
+                        <p><b>Exercise coding.</b></p>
+                    <div>
+                </li>
+                <li>
+                    <img src="/media/assets/xises.jpg"></img>
+                    <div>
+                        <p><b>WebScrapper.</b></p>
+                    <div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="home-blog">
+            <p>Other posts and creations:</p>
+            <ul>
+                <li><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
+                <li><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
+                <li><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
+                <li><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="background">
+        <img id="home-background" src="/media/assets/Dots.png"></img>
+    </section>
+
+
+
+
+{% endblock  %}
