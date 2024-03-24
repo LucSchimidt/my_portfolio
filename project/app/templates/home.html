@@ -10,7 +10,7 @@
 
         <div class="home-resume">
             <p>Download my resume:</p>
-            <button class="box-hover-effect"><i class="bi bi-file-earmark-medical"></i>Resume.pdf</button>
+            <a class="box-hover-effect" href="/media/resume/Curriculo_2024.pdf" download><i class="bi bi-file-earmark-medical"></i>Resume.pdf</a>
         </div>
 
         <div class="home-work">
@@ -19,25 +19,25 @@
                 <li class="box-hover-effect">
                     <img src="/media/assets/listras.jpg"></img>
                     <div>
-                        <p><b>This Website.</b></p>
+                        <p><b>{{ultimos_trabalhos.0.title}}</b></p>
                     <div>
                 </li>
                 <li class="box-hover-effect">
                     <img src="/media/assets/ondas.jpg"></img>
                     <div>
-                        <p><b>Website for Barbershop.</b></p>
+                        <p><b>{{ultimos_trabalhos.1.title}}</b></p>
                     <div>
                 </li>
                 <li class="box-hover-effect">
                     <img src="/media/assets/quebracabeca.jpg"></img>
                     <div>
-                        <p><b>Exercise coding.</b></p>
+                        <p><b>{{ultimos_trabalhos.3.title}}</b></p>
                     <div>
                 </li>
                 <li class="box-hover-effect">
                     <img src="/media/assets/xises.jpg"></img>
                     <div>
-                        <p><b>WebScrapper.</b></p>
+                        <p><b>{{ultimos_trabalhos.4.title}}</b></p>
                     <div>
                 </li>
             </ul>
@@ -46,10 +46,10 @@
         <div class="home-blog">
             <p>Other posts and creations:</p>
             <ul>
-                <li class="box-hover-effect"><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
-                <li class="box-hover-effect"><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
-                <li class="box-hover-effect"><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
-                <li class="box-hover-effect"><div>&lt&gt</div><p>Principais estruturas de dados em Python.</p></li>
+                <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.0.title}}</p></li>
+                <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.1.title}}</p></li>
+                <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.2.title}}</p></li>
+                <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.3.title}}</p></li>
             </ul>
         </div>
     </section>
