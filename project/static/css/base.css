@@ -1,13 +1,15 @@
 * {
     padding: 0;
+
 }
 
 html {
+    height: 100%;
 
     font-family: "Inter", sans-serif;
 
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
 
     background-color: var(--dark-purple);
     color: var(--light-green);
@@ -15,13 +17,15 @@ html {
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
 
     margin: 0;
+
+    cursor: default;
 }
 
 main {
@@ -47,13 +51,45 @@ main {
     --light-green: #EFFBF8;
 }
 
+
+/*==============================================================*/
+/*EFFECTS CLASSES: */
+
+.box-hover-effect {
+    transition: .3s ease all;
+}
+.box-hover-effect:hover {
+    cursor: pointer;
+
+    box-shadow: 0 0 25px rgba(165, 166, 255, 0.6);
+
+    transform: translate(-5px, -5%);
+}
+
+.box-hover-low-effect {
+    transition: .3s ease all;
+}
+.box-hover-low-effect:hover {
+    cursor: default;
+
+    box-shadow: 0 0 25px rgba(165, 166, 255, 0.6);
+
+    transform: translate(0, -2%);
+}
+
 /*==============================================================*/
 /*Sidebar e Bottombar */
 
+.downbar {
+    display: none;
+}
 
 .sidebar {
     width: 280px;
     height: 100%;
+
+    /*para a sidebar escrolar com o conteudo:*/
+    position: fixed;
 
     background-color: var(--light-purple);
 
@@ -135,6 +171,7 @@ main {
 
 
 .content {
+    margin-left: 280px;
     width: auto;
     max-width: 1160px;
     height: 100%;
@@ -198,11 +235,6 @@ main {
 
     font-size: var(--small-font);
 
-    transition: .3s ease all;
-}
-.home-resume button:hover {
-    cursor: pointer;
-    box-shadow: 0 0 25px rgba(165, 166, 255, 0.24);
 }
 
 .home-resume button i {
@@ -333,6 +365,7 @@ main {
 }
 
 .tech-items ul li {
+    position: relative;
     width: 225px;
     height: 225px;
 
@@ -363,6 +396,18 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.tech-badge {
+    position: absolute;
+    top:10px;
+    left: 10px;
+
+    height: 15px;
+    width: 15px;
+    
+    background-color: #B5FFC1;
+
+    border-radius: 100%;
 }
 
 
@@ -554,6 +599,8 @@ main {
 
     width: 100%;
     height: 100%;
+
+    animation: opacity 5s linear infinite;
 }
 
 #home-background {
@@ -586,4 +633,22 @@ main {
     border-radius: 100%;
     box-shadow: 10px 0 25px rgba(165, 166, 255, 0.25);
 
+}
+
+
+
+
+
+@keyframes opacity {
+    0% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 25%;
+    }
 }
