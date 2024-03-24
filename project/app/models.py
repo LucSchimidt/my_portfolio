@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 TYPES = (
@@ -8,8 +9,9 @@ TYPES = (
 
 class Item(models.Model):
     title = models.CharField(max_length=100)
-    type =  models.CharField(max_length=10, choices=TYPES, default=0)
+    type =  models.IntegerField(choices=TYPES, default=0)
     content = models.CharField(max_length=2000)
+    created_at = models.DateField(default=timezone.now)
 
 
 
@@ -22,8 +24,7 @@ TECH_LEVELS = (
 
 class Tech(models.Model):
     title = models.CharField(max_length=100)
-    type =  models.CharField(max_length=10, choices=TECH_LEVELS, default=0)
-    description = models.CharField(max_length=1000)
+    type =  models.IntegerField(choices=TECH_LEVELS, default=0)
 
 
 class Resume(models.Model):
