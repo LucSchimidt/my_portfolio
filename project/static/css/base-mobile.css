@@ -10,12 +10,13 @@
     body {
         overflow-x: hidden;
         max-width: 700px;
-
+        height: auto;
     }
 
     .main {
         flex-direction: column;
         width: 100%;
+        height: auto;
         max-width: 500px;
     }
 
@@ -65,10 +66,9 @@
         margin-left: 0;
 
         width: 100%;
+        height: auto;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
 
         padding: 10px;
@@ -125,8 +125,12 @@
     /*==============================================================*/
     /*Home: */
 
+    .home {
+        height: auto;
+    }
+
     .home-title {
-        margin-top: 30vh;
+        margin-top: 250px;
 
     }
     .home-title p {
@@ -164,21 +168,114 @@
         height: 70%;
     }
     .home-work {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
 
 
     .home-blog {
-        margin-bottom: 500px;
+        margin-bottom: 200px;
     }
 
+    .home-blog ul li {
+        width: 90vw;
+        max-width: 500px;
+    }
+
+    /*==============================================================*/
+    /*Tech: */
+
+    .tech {
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 200px;
+    }
+
+    .tech-title {
+        margin-bottom: 50px;
+    }
+
+    .tech-items ul {
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #sub-desktop {
+        display: none;
+    }
+    #sub-mobile {
+        position: relative;
+        display: flex;
+    }
+
+
+
+
+    /*==============================================================*/
+    /*Archive: */
+
+
+    .archive {
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 200px;
+    }
+
+    .archive-items ul li {
+        width: 90vw;
+        max-width: 500px;
+    }
+
+
+
+
+    /*==============================================================*/
+    /*Sobre mim: */
+
+    .popup-content {
+        width: 90vw;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .popup-content i {
+        font-size: var(--big-font);
+    }
+
+    /*==============================================================*/
+    /*Item de portfolio: */
+
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .portfolio-item h1 {
+        margin-top: 100px;
+    }
 
     /*==============================================================*/
     /*Background: */
 
 
     .background {
+        position: absolute;
         max-width: 500px;
+        z-index: -100;
     }
 
 }

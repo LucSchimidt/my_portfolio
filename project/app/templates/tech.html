@@ -5,39 +5,76 @@
     <section class="tech">
 
         <div class="tech-title">
-            <h1>Tech & Knowledge.</h1>
-            <p>These are the technologies and subjects I currently am learning or making projects with:</p>
+            <h1>Techs & Conhecimento.</h1>
+            <p>Estas são as tecnologias e assuntos que atualmente estou aprendendo ou desenvolvendo projetos com:</p>
+        </div>
+
+        <div id="sub-mobile" class="tech-subtitle">
+            <p><b>Legenda:</b></p>
+            <ul>
+                <li>
+                    <div class="tech-dot" id="green-dot"></div>
+                    <p>+3 anos.</p>
+                </li>
+                <li>
+                    <div class="tech-dot" id="orange-dot"></div>
+                    <p>+2 anos.</p>
+                </li>
+                <li>
+                    <div class="tech-dot" id="red-dot"></div>
+                    <p>+1 ano.</p>
+                </li>
+                <li>
+                    <div class="tech-dot" id="gray-dot"></div>
+                    <p>Aprendendo</p>
+                </li>
+            </ul>
         </div>
 
         <div class="tech-items">
             <ul>
                 {% for item in tech %}
-                    <li class="box-hover-low-effect"><div class="tech-badge"></div><div class="tech-logo"></div><div class="tech-name"><p><b>{{item.title}}</b></p></div></li>
+                    <li class="box-hover-low-effect">
+                        {% if item.type == 3 %}
+                            <div class="tech-badge-3 tech-badge"></div>
+                        {% endif %}
+                        {% if item.type == 2 %}
+                            <div class="tech-badge-2 tech-badge"></div>
+                        {% endif %}
+                        {% if item.type == 1 %}
+                            <div class="tech-badge-1 tech-badge"></div>
+                        {% endif %}
+                        {% if item.type == 0 %}
+                            <div class="tech-badge-0 tech-badge"></div>
+                        {% endif %}
+                        <div class="tech-logo"></div>
+                        <div class="tech-name"><p><b>{{item.title}}</b></p></div>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
 
-        <div class="tech-subtitle">
-            <p><b>Subtitle:</b></p>
+        <div id="sub-desktop" class="tech-subtitle">
+            <p><b>Legenda:</b></p>
             <ul>
                 <li>
                     <div class="tech-dot" id="green-dot"></div>
-                    <p>+3 years.</p>
+                    <p>+3 anos.</p>
                 </li>
                 <li>
                     <div class="tech-dot" id="orange-dot"></div>
-                    <p>+2 years.</p>
+                    <p>+2 anos.</p>
                 </li>
                 <li>
                     <div class="tech-dot" id="red-dot"></div>
-                    <p>+1 year.</p>
+                    <p>+1 ano.</p>
                 </li>
                 <li>
                     <div class="tech-dot" id="gray-dot"></div>
-                    <p>Learning</p>
+                    <p>Aprendendo</p>
                 </li>
             </ul>
-        <div>
+        </div>
 
     </section>
 

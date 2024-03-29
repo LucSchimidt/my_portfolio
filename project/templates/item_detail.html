@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <section class="portfolio-item">
+        <h1>{{ object.title }}</h1>
+        {{ object.content | safe }}
+    </section>
+{% endblock content %}

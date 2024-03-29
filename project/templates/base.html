@@ -25,13 +25,14 @@
             <div class="pages">
                 <ul>
                     <li onclick="mudarPagina('')">Home</li>
-                    <li onclick="mudarPagina('tech')">Tech & Knowledge</li>
-                    <li onclick="mudarPagina('archive')">Archive</li>
+                    <li onclick="mudarPagina('tech')">Techs & Conhecimento</li>
+                    <li onclick="mudarPagina('archive')">Arquivo</li>
                 </ul>
             </div>
             <div class="social">
                 <ul>
                     <i onclick="gotoPage('https://www.linkedin.com/in/lucas-schimidt/')" class="bi bi-linkedin"></i>
+                    <i onclick="gotoPage('https://github.com/LucSchimidt')" class="bi bi-github"></i>
                 </ul>
             </div>
         </section>
@@ -52,8 +53,47 @@
             {% block content %}{% endblock  %}
         </section>
 
+        <section id="popup" class="popup">
+            <div class="popup-content">
+                <i onclick="hideElement()" class="bi bi-x"></i>
+                <div>
+                    <img class="popup-img" src="/media/assets/lucas.jpeg"></img>
+                    <h1>Lucas Lourenço Schimidt.</h1>
+                    <p>
+                        Me chamo Lucas Lourenço Schimidt, tenho 20 anos. Estou cursando Bacharelado em Ciência
+                        da Computação pela PUC Minas e sou programador há aproximadamente 3 anos.<br>
+                        <br>
+                        Meu objetivo é encontrar uma oportunidade na área de tecnologia, em um local onde eu possa
+                        aprender e aplicar novos conhecimentos, a fim de me desenvolver e colaborar com os
+                        objetivos da empresa.<br>
+                        <br>
+                        Tive experiências desenvolvendo soluções para clientes de fora do país através de plataformas
+                        de freelance, com meus conhecimentos de inglês e também já trabalhei efetivamente em uma
+                        empresa de tecnologia nacional, onde tive experiência com linguagens como Python, C# e
+                        SQL.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section class="personal">
-            <img class="box-hover-effect" src="/media/assets/lucas.jpeg"></img>
+            <img onclick="showElement()" class="box-hover-effect" src="/media/assets/lucas.jpeg"></img>
+        </section>
+
+        <section id="inicial-msg" class="popup"> 
+            <div class="popup-content">
+                <i onclick="hideElement()" class="bi bi-x"></i>
+                <img></img>
+                <div>
+                    <h2>Bem vindo(a)</h2>
+                    <p>Seja muito bem vindo ou bem vinda ao meu portfólio. Este projeto está em desenvolvimento 
+                        a aproximadamente 9 dias. Portanto é bem recente e podem haver alguns erros ainda não corrigidos. Caso 
+                        encontre algum, se sinta livre para me informar.<br>
+                        <br>
+                        Agradeço desde já a paciência, muito obrigado!
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 
