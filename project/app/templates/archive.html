@@ -4,14 +4,14 @@
 
     <section class="archive">
         <div class="archive-title">
-            <h1>Archive.</h1>
-            <p>This is an archive about everything that I been doing in the past few years.</p>
+            <h1>Arquivo.</h1>
+            <p>Este é um arquivo sobre tudo o que tenho feito nos últimos meses.</p>
         </div>
 
         <div class="archive-items">
             <ul>
                 {% for item in arquivo %}
-                    <li class="box-hover-effect"><div>&lt&gt</div><p>{{item.title}}</p></li>
+                    <li onclick="openPortfolio('archive/{{item.pk}}')" class="box-hover-effect"><div>&lt&gt</div><p>{{item.title}}</p></li>
                 {% endfor %}
                 
             </ul>

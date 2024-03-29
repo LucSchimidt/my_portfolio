@@ -4,49 +4,49 @@
 
     <section class="home">
         <div class="home-title">
-            <h2><b>#My name is Lucas Schimidt,</b></h2>
-            <h1>Welcome to my Portfolio.</h1>
+            <h2><b>#Meu nome é Lucas Schimidt,</b></h2>
+            <h1>Bem vindo(a) ao meu Portfolio.</h1>
         </div>
 
         <div class="home-resume">
-            <p>Download my resume:</p>
+            <p>Baixe meu currículo:</p>
             <a class="box-hover-effect" href="/media/resume/Curriculo_2024.pdf" download><i class="bi bi-file-earmark-medical"></i>Resume.pdf</a>
         </div>
 
         <div class="home-work">
-            <p>See my recent work:</p>
+            <p>Trabalhos mais recentes:</p>
             <ul>
-                <li class="box-hover-effect">
+                <li onclick="openPortfolio('archive/{{ultimos_trabalhos.0.pk}}')" class="box-hover-effect">
                     <img src="/media/assets/listras.jpg"></img>
                     <div>
                         <p><b>{{ultimos_trabalhos.0.title}}</b></p>
                     <div>
                 </li>
-                <li class="box-hover-effect">
+                <li onclick="openPortfolio('archive/{{ultimos_trabalhos.1.pk}}')" class="box-hover-effect">
                     <img src="/media/assets/ondas.jpg"></img>
                     <div>
                         <p><b>{{ultimos_trabalhos.1.title}}</b></p>
                     <div>
                 </li>
-                <li class="box-hover-effect">
+                <li onclick="openPortfolio('archive/{{ultimos_trabalhos.2.pk}}')" class="box-hover-effect">
                     <img src="/media/assets/quebracabeca.jpg"></img>
                     <div>
-                        <p><b>{{ultimos_trabalhos.3.title}}</b></p>
+                        <p><b>{{ultimos_trabalhos.2.title}}</b></p>
                     <div>
                 </li>
-                <li class="box-hover-effect">
+                <li onclick="openPortfolio('archive/{{ultimos_trabalhos.3.pk}}')" class="box-hover-effect">
                     <img src="/media/assets/xises.jpg"></img>
                     <div>
-                        <p><b>{{ultimos_trabalhos.4.title}}</b></p>
+                        <p><b>{{ultimos_trabalhos.3.title}}</b></p>
                     <div>
                 </li>
             </ul>
         </div>
 
         <div class="home-blog">
-            <p>Other posts and creations:</p>
+            <p>Outras postagens e criações:</p>
             <ul>
-                <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.0.title}}</p></li>
+                <li onclick="openPortfolio('archive/{{ultimos_blogs.0.pk}}')" class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.0.title}}</p></li>
                 <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.1.title}}</p></li>
                 <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.2.title}}</p></li>
                 <li class="box-hover-effect"><div>&lt&gt</div><p>{{ultimos_blogs.3.title}}</p></li>
@@ -55,7 +55,7 @@
     </section>
 
     <section class="background">
-        <img id="home-background" src="/media/assets/Dots.png"></img>
+        <img id="tech-background" src="/media/assets/Dots.png"></img>
     </section>
 
 
